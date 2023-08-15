@@ -1,0 +1,62 @@
+{% extends 'edu/base1.html' %}
+{% load static %}
+
+
+
+{% block content %}
+<div class="container mt-5 my-5 p-5">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="col-sm-3 offset-4">
+              <label for="exampleInputAmount" class="form-label">Registration Fees:</label>
+              <input type="text" name="amount" value="200" class="form-control" id="exampleInputAmount" aria-describedby="emailHelp" readonly>
+            </div>  
+     <input type="submit"  class="btn btn-primary mt-3 offset-5" value="Pay Now">           
+ 
+  </form>  
+</div> 
+        
+          {% if form.non_field_errors %}
+            {% for error in form.non_field_errors %}
+            <p class="alert alert-danger my-3">{{error}}</p>
+            {% endfor %}
+          {% endif %}
+      
+    
+        </div>
+    
+    </div>
+</div>
+<div class="row" mt-1 p-3>
+  <div class="col-sm-4 mx-auto">
+{% if messages %}
+ {% for message in messages %}
+ <span {% if message.tags %} class="alert-{{message.tags}}" {% endif %}>{{message}}</span>
+ {% endfor %}
+{% endif %} 
+</div>
+</div>
+{% if payment %}
+<div class="text-center">
+<form action="/edu/success" method="POST">
+ <script src="https://checkout.razorpay.com/v1/checkout.js"
+ data-key = "rzp_test_ugBbbb0MY8YfMB"
+ data-amount = "{{payment.amount}}"
+ data-currency = "INR"
+ data-order_id = "{{payment.id}}"
+ data-buttontext = "Pay with Razorpay"
+ data-name = "Cofee Corp"
+ data-description = "Test transaction"
+ data-image = "https://example.com/your_logo"
+ data-prefill.name="Gaurav Kumar"
+ data.prefill.email = "gaurav.kumar@example.com"
+ data-prefill.contact = "9999999999"
+ data-theme.color = "#3399cc"
+
+ ></script>
+ <input type="hidden" custom = "Hidden Element" name="hidden" class="alert alert-success">
+
+</form>
+{% endif %}
+{% endblock content %}
+

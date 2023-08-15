@@ -1,0 +1,17 @@
+{% extends 'edu/base1.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="container mt-5 shadow p-5">
+    <div class="row offset-5">
+        <div class="col-sm-1 mt-3">
+            <p><a href="{% url "printform" %}" class="btn btn-primary btn-lg">Print</a></p>
+        </div>
+        <div class="col-sm-1 mt-3 offset-1">
+            <p><a href="{% url "payment" %}" class="btn btn-primary btn-lg">Payment</a></p>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

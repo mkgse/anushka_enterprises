@@ -1,0 +1,59 @@
+{% extends 'adminportal/base1.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+<div class="container-fluid my-3 mt-3 shadow p-3">
+  <h3 class="text-center alert alert-success">Student Payment Details</h3>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">User Id</th>
+        <th scope="col">User Name</th>
+        <th scope="col">Payment Date</th>
+        <th scope="col">Payment Id</th>
+        <th scope="col">Status Status</th>
+        <th scope="col">Amount</th>
+      </tr>
+    </thead>
+    {% if form %}
+    {% for fm in form %}
+    <tbody>
+      <tr>
+        <td>{{fm.id}}</td>
+        <td>{{fm.user}}</td>
+        <td>{{fm.payment_date}}</td>
+        <td>{{fm.paymentid}}</td>
+        <td>{{fm.paid}}</td>
+        <td>{{fm.amount}}</td>
+        
+      </tr>
+    </tbody>
+    {% endfor %}
+    {% else %}
+
+    <tbody>
+      <tr>
+        <td>No Record Found</td>
+      </tr>
+    </tbody>
+    {% endif %}
+  </table>
+
+
+
+
+<div class="col-sm-4 offset-4">
+    {% if messages %}
+     {% for message in messages %}
+     <span {% if message.tags %} class="alert-{{message.tags}}" {% endif %}><script>alert('{{message}}')</script></span>
+    {% endfor %}
+    {% endif %} 
+   
+    
+    </div>
+
+  </div>      
+{% endblock content %}

@@ -1,0 +1,57 @@
+{% extends 'adminportal/base1.html' %}
+
+{% load static %}
+
+
+
+{% block content3 %} 
+
+<style>
+  .container{
+    width: 80%;
+  }
+</style>
+
+<div class="container mt-4 my-3">
+  <h3 class="text-center">Update Admission Status</h3>
+   
+<form action="" method="POST" enctype="multipart/form-data" class="shadow offset-0 p-3">   
+ 
+{% csrf_token %}
+ 
+{{form.as_p}}
+
+ {% for st in form %}
+     <div>
+      <small class="text-danger">{{st.errors|striptags}}</small>
+     </div>
+  {% endfor %}
+ 
+  <input type="submit" value="Update" onClick='return confirmSubmit()' class="btn btn-primary col-sm-3 offset-3">    
+  <a href="{% url 'admstatus'%}" class="btn btn-success col-sm-3">Back to Home</a>
+  
+  </form>
+
+
+  <div class="col-sm-4 offset-4">
+    {% if messages %}
+     {% for message in messages %}
+     <span {% if message.tags %} class="alert-{{message.tags}}" {% endif %}><script>alert('{{message}}')</script></span>
+    {% endfor %}
+    {% endif %} 
+   
+    
+    </div>
+    </div>
+</div>
+
+  
+
+ 
+
+{% endblock content3 %}
+
+
+{% block jscontent %}
+
+{% endblock jscontent %}

@@ -1,0 +1,438 @@
+{% extends 'edu/base1.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container text-center mt-5 cont p-5 shadow mx-auto">
+  <div class="row">
+    <div class="col-sm-8 offset-1">
+          <h3 class="text-center" >Check Available Courses Here</h3><br>
+          <select class="" style="width: 100%;height: 30px ;" id="SelectA" onclick="display();">
+            <option value="zz">--Choose Courses--</option>
+            <option value="aa">Tution</option>
+            <option value="bb">DCA</option>
+            <option value="cc">CFA</option>
+            <option value="dd">DDTP</option>
+            <option value="ee">DCAA</option>
+            <option value="ff">DCAD</option>
+            <option value="gg">ADCA</option>
+            <option value="hh">DCP</option>
+            <option value="ii">HDCA</option>
+            <option value="jj">DAP</option>
+            <option value="kk">HDAP</option>
+            <option value="ll">HDIT</option>
+            <option value="mm">ADIT</option>
+            <option value="nn">DCH</option>
+            <option value="oo">ADCHN</option>
+            <option value="pp">DCN</option>
+            <option value="qq">DWD</option>
+            <option value="rr">DMM</option>
+            <option value="ss">ADGA</option>
+          </select>
+    </div>
+  </div>
+</div>
+<div class="container text-center mt-5 cont">
+    <div class="row mt-2">
+      <div class="col-sm-6 offset-3" style="display: none;" id="a">
+            <h3 class="text-center" style="font-size:30px;font-family: sans-serif;background-color: blue;color: white; font-weight: bold;">9th OR 10th</h3>
+             <p style="font-size:25px; font-weight: bold;">Subjects : </p>
+            <p style="color:red; font-size: 22px; font-family: 'Times New Roman', Times, serif; ">Hindi, English, Math, Science, Social Science, Drawing or Sanskrit</p>
+            <h3 style="color:green; font-size: 22px; font-family: 'Times New Roman', Times, serif;"><p style="color:black; font-weight: bold;">Fees Structure : </p>
+            <p>Hindi Medium :<span style="font-style: italic; color:black;">600 Rs. Per/Month</span> </p>
+            <p>English Medium :<span style="font-style: italic; color:black;">1000 Rs. Per/Month</span> </p></h3> 
+          
+            <h3 class="text-center" style="font-size:30px;font-family: sans-serif;background-color: blue;color: white; font-weight: bold;">7th, 8th OR 6th</h3>
+            <p style="font-size:25px; font-weight: bold;">Subjects : </p>
+           <p style="color:red; font-size: 22px; font-family: 'Times New Roman', Times, serif; ">Hindi, English, Math, Science, Social Science, Drawing or Sanskrit</p>
+           <h3 style="color:green; font-size: 22px; font-family: 'Times New Roman', Times, serif;"><p style="color:black; font-weight: bold;">Fees Structure : </p>
+           <p>Hindi Medium :<span style="font-style: italic; color:black;">400 Rs. Per/Month</span> </p>
+           <p>English Medium :<span style="font-style: italic; color:black;">600 Rs. Per/Month</span> </p></h3> 
+         
+           <h3 class="text-center" style="font-size:30px;font-family: sans-serif;background-color: blue;color: white; font-weight: bold;">Sort Term Course</h3>
+           <p style="font-size:25px; font-weight: bold;">Subjects : </p>
+          <p style="color:red; font-size: 22px; font-family: 'Times New Roman', Times, serif; ">English Speaking Course</p>
+          <h3 style="color:green; font-size: 22px; font-family: 'Times New Roman', Times, serif;"><p style="color:black; font-weight: bold;">Fees Structure : </p>
+          <p>Hindi Medium :<span style="font-style: italic; color:black;">3000 Rs.Quartaly</span> </p>
+          <p>Duration :<span style="font-style: italic; color:black;">3 Month</span> </p></h3> 
+      </div>
+         
+           <div class="col-sm-10" id="b" style="display:none;">
+            <h1 style="color:blue; font-weight: bold;">DCA</h1>
+            <h3 style="color:green;">Diploma in Computer Application</h3>
+            <h5 style="float: left; color: red;">Course Code:-LT 01</h5>
+            <h5 style="float: right; color: red;">Duration - Six Months</h5><br>
+
+       
+              <h1 style="font-weight: bold; color:dodgerblue;">Modules:</h1> <P>Fundamental of Computer</P>
+              <P>Operating System<br>
+                (MS-DOS,MS-Excel,MS-Powerpoint)</P>
+              <p>MS-Office 2016</p>
+              <p>MS-Word, MS-Excel, MS-Powerpoint<br>
+              MS-Access, MS-Publisher, MS-Outlook</p>
+              <p>Internet, Email, Multimedia</p>
+              <p>Web Browsing, Social Networking, E-Governance, G2C, G2B etc.</p>
+              <p>HTML(Hyper Text Markup Language)</p>
+              <p>Assignment, Project Work on Data Entry</p>
+
+              <h2 style="color:dodgerblue">Fee Structure:</h2>
+              <p style="color:black; font-weight: bold;">In Lumpsum Rs.3600/-in Installment RS. 2000+1500+700=4200/-</p>
+       
+        
+           </div>
+         
+      
+
+    </div>
+   
+    
+        <div class="col-sm-10" id="c" style="display:none;">
+          <h1 style="color:blue; font-weight: bold;">CFA</h1>
+          <h3 style="color:green;">Diploma in Computer Application</h3>
+          <h5 style="float: left; color: red;">Course Code:-LT 02</h5>
+          <h5 style="float: right; color: red;">Duration - Three Months</h5><br>
+
+     
+            <h1 style="font-weight: bold; color:dodgerblue;">Modules:</h1>
+           
+            <p>Concept of Financial Accounting</p>
+            <p>Tally latest Version
+           <p>Inventory,GST,TDS,TCS,Payroll etc.</p>
+            <p>Report in Tally,Assignment & Project Work</p>
+        
+            <h2 style="color:dodgerblue">Fee Structure:</h2>
+            <p style="color:black; font-weight: bold;">In Lumpsum Rs.2800/-in Installment RS. 1800+1450=3250/-</p>
+     
+      
+         </div>
+
+         <div class="col-sm-10" id="d" style="display:none;">
+          <h1 style="color:blue; font-weight: bold;">DDTP</h1>
+          <h3 style="color:green;">Diploma in Desktop Publishing</h3>
+          <h5 style="float: left; color: red;">Course Code:-LT 03</h5>
+          <h5 style="float: right; color: red;">Duration - Six Months</h5><br>
+
+     
+            <h1 style="font-weight: bold; color:dodgerblue;">Modules:</h1> <P>Fundamental of Computer</P>
+           
+            <p>Operating System<br>(MS-DOS,MS-Window7/10)</p>
+            <p>Internet,Email,Multimedia</p>
+           <p>Web Browsing, Social Networking, E-Goveernance,G2C,G2B etc.</p>
+            <p>Indesign, Coral Drawn 16, Photoshop CS</p>
+            <p>Scanning, Use of Digital Camera</p>
+            <p>Assignment & Project Work</p>
+        
+            <h2 style="color:dodgerblue">Fee Structure:</h2>
+            <p style="color:black; font-weight: bold;">In Lumpsum Rs.2800/-in Installment RS. 1800+1450=3250/-</p>
+     
+      
+         </div>
+
+
+         
+         <div class="col-sm-10" id="e" style="display:none;">
+          <h1 style="color:blue; font-weight: bold;">DCAA</h1>
+          <h3 style="color:green;">Diploma in Computer Application & Accounting</h3>
+          <h5 style="float: left; color: red;">Course Code:-LT 04</h5>
+          <h5 style="float: right; color: red;">Duration - Nine Months</h5><br>
+
+     
+            <h1 style="font-weight: bold; color:dodgerblue;">Modules:</h1> <P>DCA+CFA</P>
+           
+                  
+            <h2 style="color:dodgerblue">Fee Structure:</h2>
+            <p style="color:black; font-weight: bold;">In Lumpsum Rs.5200/-in Installment RS. 2500+2000+1300=5800/-</p>
+     
+      
+         </div>
+
+         <div class="col-sm-10" id="f" style="display:none;">
+          <h1 style="color:blue; font-weight: bold;">DCAD</h1>
+          <h3 style="color:green;">Diploma in Computer Application & Designing</h3>
+          <h5 style="float: left; color: red;">Course Code:-LT 05</h5>
+          <h5 style="float: right; color: red;">Duration - Nine Months</h5><br>
+
+     
+            <h1 style="font-weight: bold; color:dodgerblue;">Modules:</h1> <P>DCA+DTP</P>
+           
+                  
+            <h2 style="color:dodgerblue">Fee Structure:</h2>
+            <p style="color:black; font-weight: bold;">In Lumpsum Rs.6200/-<br>in Installment RS. 2500+1500+1500=7000/-</p>
+     
+      
+         </div>
+
+         
+         <div class="col-sm-10" id="g" style="display:none;">
+          <h1 style="color:blue; font-weight: bold;">ADCA</h1>
+          <h3 style="color:green;">Advance Diploma in Computer Application</h3>
+          <h5 style="float: left; color: red;">Course Code:-LT 06</h5>
+          <h5 style="float: right; color: red;">Duration - One Year</h5><br>
+
+     
+            <h1 style="font-weight: bold; color:dodgerblue;">Modules:</h1> <P>DCA+CFA+DTP</P>
+           
+                  
+            <h2 style="color:dodgerblue">Fee Structure:</h2>
+            <p style="color:black; font-weight: bold;">In Lumpsum Rs.8800/-<br>in Installment RS. 4000+3500+2500=10000/-</p>
+     
+      
+         </div>
+
+         <div class="col-sm-10" id="h" style="display:none;">
+          <h1 style="color:blue; font-weight: bold;">DCP</h1>
+          <h3 style="color:green;">Diploma in Computer Programming</h3>
+          <h5 style="float: left; color: red;">Course Code:-LT 07</h5>
+          <h5 style="float: right; color: red;">Duration - Six Months</h5><br>
+
+     
+            <h1 style="font-weight: bold; color:dodgerblue;">Modules:</h1>
+             <P>Concept of Programming</P>
+             <P>Flow Chart</P>
+             <P>C++</P>
+             <P>V.B 6.0</P>
+             <P>Techniques of Software Development</P>
+             <P>Assignment & Project Work</P>
+           
+                  
+            <h2 style="color:dodgerblue">Fee Structure:</h2>
+            <p style="color:black; font-weight: bold;">In Lumpsum Rs.6200/-<br>in Installment RS. 3000+2500+1500=7000/-</p>
+     
+      
+         </div>
+
+         <div class="col-sm-10" id="i" style="display:none;">
+          <h1 style="color:blue; font-weight: bold;">HDCA</h1>
+          <h3 style="color:green;">Honours Diploma in Computer Application</h3>
+          <h5 style="float: left; color: red;">Course Code:-LT 08</h5>
+          <h5 style="float: right; color: red;">Duration - One Year</h5><br>
+
+     
+            <h1 style="font-weight: bold; color:dodgerblue;">Modules:</h1> <P>DCA+DCP</P>
+           
+                  
+            <h2 style="color:dodgerblue">Fee Structure:</h2>
+            <p style="color:black; font-weight: bold;">In Lumpsum Rs.8600/-<br>in Installment RS. 4000+3000+2300=93000/-</p>
+     
+      
+         </div>
+
+         <div class="col-sm-10" id="j" style="display:none;">
+          <h1 style="color:blue; font-weight: bold;">DAP</h1>
+          <h3 style="color:green;">Diploma in Advance Programming</h3>
+          <h5 style="float: left; color: red;">Course Code:-LT 09</h5>
+          <h5 style="float: right; color: red;">Duration - Six Months</h5><br>
+
+     
+            <h1 style="font-weight: bold; color:dodgerblue;">Modules:</h1> 
+            <P>Visual Basic 6.0</P>
+            <P>C#</P>
+            <p>Oracle 9i </p>
+            <p>Java </p>
+            <p>Techniques of Software Development </p>
+            <p>Assignment & Project Work  </p>
+           
+                  
+            <h2 style="color:dodgerblue">Fee Structure:</h2>
+            <p style="color:black; font-weight: bold;">In Lumpsum Rs.9000/-<br>in Installment RS. 4000+3500+2500=10000/-</p>
+     
+      
+         </div>
+
+         <div class="col-sm-10" id="k" style="display:none;">
+          <h1 style="color:blue; font-weight: bold;">HDAP</h1>
+          <h3 style="color:green;">Honours Diploma in Advanced Programming</h3>
+          <h5 style="float: left; color: red;">Course Code:-LT 10</h5>
+          <h5 style="float: right; color: red;">Duration - One Year</h5><br>
+
+     
+            <h1 style="font-weight: bold; color:dodgerblue;">Modules:</h1> 
+            <P>DCP+DAP</P>
+           
+                   
+            <h2 style="color:dodgerblue">Fee Structure:</h2>
+            <p style="color:black; font-weight: bold;">In Lumpsum Rs.11500/-<br>in Installment RS. 4500+3500+2000=12500/-</p>
+     
+      
+         </div>
+
+         <div class="col-sm-10" id="l" style="display:none;">
+          <h1 style="color:blue; font-weight: bold;">HDIT</h1>
+          <h3 style="color:green;">Honours Diploma in Information Technology</h3>
+          <h5 style="float: left; color: red;">Course Code:-LT 11</h5>
+          <h5 style="float: right; color: red;">Duration - One Year</h5><br>
+
+     
+            <h1 style="font-weight: bold; color:dodgerblue;">Modules:</h1> 
+            <P>Fundamental of Computer & Information Technology</P>
+            <P>MS-DOS,Windows 7/10</P>
+            <P>Internet,Email & Multimedia</P>
+            <P>Web Browsing, Social Networking, E-Governance, G2C, G2B etc.</P>
+            <P>MS-Office 2016(Word,Excel,Powerpoint,Access,Publisher</P>
+            <P>Concept of Accounting, Latest Version of Tally </P>
+            <P>PLDT(Programming Logic Design & Techniques) </P>
+            <P>Programming in C </P>
+            <P>Programming in C++ </P>
+            <P>Event Driven Programming(V.B 6.0) </P>
+           
+                  
+            <h2 style="color:dodgerblue">Fee Structure:</h2>
+            <p style="color:black; font-weight: bold;">In Lumpsum Rs.10000/-<br>in Installment RS. 4500+3500+2500+2000=12500/-</p>
+     
+      
+         </div>
+
+         <div class="col-sm-10" id="m" style="display:none;">
+          <h1 style="color:blue; font-weight: bold;">ADIT</h1>
+          <h3 style="color:green;">Diploma in Information Technology</h3>
+          <h5 style="float: left; color: red;">Course Code:-LT 12</h5>
+          <h5 style="float: right; color: red;">Duration - One Year</h5><br>
+
+     
+            <h1 style="font-weight: bold; color:dodgerblue;">Modules:</h1> <P>DCA+DCP+DAP</P>
+           
+                  
+            <h2 style="color:dodgerblue">Fee Structure:</h2>
+            <p style="color:black; font-weight: bold;">In Lumpsum Rs.14000/-<br>in Installment RS. 6000+4500+300+2000=15500-</p>
+     
+      
+         </div>
+
+         <div class="col-sm-10" id="n" style="display:none;">
+          <h1 style="color:blue; font-weight: bold;">DCH</h1>
+          <h3 style="color:green;">Diploma in Computer Harware </h3>
+          <h5 style="float: left; color: red;">Course Code:-LT 13</h5>
+          <h5 style="float: right; color: red;">Duration - Six Months</h5><br>
+
+     
+            <h1 style="font-weight: bold; color:dodgerblue;">Modules:</h1> 
+            <P>Computer Fundamental,MS-DOS,MS-Windows 98/XP/7/8/10 PC Assembling, Peripheral Devices Installation(Printer,Scanner,T.V. Tuner,Digital Camera etc.),
+              Hardware Troubleshooting, Operating System Installation,Device driver Installation,Application Software Installation,Software
+              Troubleshooting, CD Writing, Connecting to Internet & its Application, Detect and Remove Virus with Antivirus Software,
+              Concept of Local Area Networking,Working with LAN, Assignment & Project Work
+            </P>
+           
+                  
+            <h2 style="color:dodgerblue">Fee Structure:</h2>
+            <p style="color:black; font-weight: bold;">In Lumpsum Rs.6200/-<br>in Installment RS. 3000+2500+1500=7000/-</p>
+     
+      
+         </div>
+
+         <div class="col-sm-10" id="o" style="display:none;">
+          <h1 style="color:blue; font-weight: bold;">ADCHN</h1>
+          <h3 style="color:green;">Advance Diploma in Computer Hardware & Networking</h3>
+          <h5 style="float: left; color: red;">Course Code:-LT 14/h5>
+          <h5 style="float: right; color: red;">Duration - One Year</h5><br>
+
+     
+            <h1 style="font-weight: bold; color:dodgerblue;">Modules:</h1> 
+            <P>Computer Fundamental, MS-DOS, MS-Window 98/XP/7/8/10, PC Assembling, Basic Electronics, 
+              Microprofessor,Motherboard, Digital Electronics,Peripheral Devices Installation (Printer, Scanner,T.V.,Tuner,Digital Camera etc.),
+              Hardware Troubleshooting,Operating System Installation,Software Troubleshooting ,CD Writing, Connecting to Internet & its Aplication,
+              Detect and  Remove Virus with Antivirus Software,Introduction to Networking (LAN/WAN/MAN), LAN Technogies,Network Essential,Network
+              Devices,Implementation, Design and Administration of LAN.,Configure MODEM, Wifi, Hotspot, Social Networking G2C, G2B Assignment
+              & Project Work.
+
+            </P>
+           
+                  
+            <h2 style="color:dodgerblue">Fee Structure:</h2>
+            <p style="color:black; font-weight: bold;">In Lumpsum Rs.12000/-<br>in Installment RS. 4500+4000+2000=13500/-</p>
+     
+      
+         </div>
+
+         <div class="col-sm-10" id="p" style="display:none;">
+          <h1 style="color:blue; font-weight: bold;">DCN</h1>
+          <h3 style="color:green;">Diploma in Computer Networking </h3>
+          <h5 style="float: left; color: red;">Course Code:-LT 15</h5>
+          <h5 style="float: right; color: red;">Duration - Six Months</h5><br>
+
+     
+            <h1 style="font-weight: bold; color:dodgerblue;">Modules:</h1> 
+            <P>Overview on Internetworking,OSI Reference Model,Cisco Three Layer
+              Model, TCP/IP model,IP V4 & V6 Adressing, Configuring 
+             </P>
+           
+                  
+            <h2 style="color:dodgerblue">Fee Structure:</h2>
+            <p style="color:black; font-weight: bold;">In Lumpsum Rs.8600/-<br>in Installment RS. 4000+3000+2300=93000/-</p>
+     
+      
+         </div>
+
+         <div class="col-sm-10" id="q" style="display:none;">
+          <h1 style="color:blue; font-weight: bold;">DWD</h1>
+          <h3 style="color:green;">Diploma in Website Designing</h3>
+          <h5 style="float: left; color: red;">Course Code:-LT 16</h5>
+          <h5 style="float: right; color: red;">Duration - Six Months</h5><br>
+
+     
+            <h1 style="font-weight: bold; color:dodgerblue;">Modules:</h1> 
+            <P>HTML, Java Script, ASP.Net, MYSQL, Assignment & Project Work.</P>
+           
+                  
+            <h2 style="color:dodgerblue">Fee Structure:</h2>
+            <p style="color:black; font-weight: bold;">In Lumpsum Rs.12000/-<br>in Installment RS. 6000+5000+2000=13000/-</p>
+     
+      
+         </div>
+
+         <div class="col-sm-10" id="r" style="display:none;">
+          <h1 style="color:blue; font-weight: bold;">DMM</h1>
+          <h3 style="color:green;">Diploma in Multimedia</h3>
+          <h5 style="float: left; color: red;">Course Code:-LT 17</h5>
+          <h5 style="float: right; color: red;">Duration - Six Months</h5><br>
+
+     
+            <h1 style="font-weight: bold; color:dodgerblue;">Modules:</h1>
+             <P>Instruction to multimedia and its uses, Photoshop, Flash, Sound Forge, Swiss, Adobe Premier, GIF Animator, 3-D
+              Cool, Multimedia Prsentation,Corporate Prsentation, Basic of Cartooning and Animations, e-learning, Assignment, Project Work
+             </P>
+           
+                  
+            <h2 style="color:dodgerblue">Fee Structure:</h2>
+            <p style="color:black; font-weight: bold;">In Lumpsum Rs.9000/-<br>in Installment RS. 4000+3500+3000=10500/-</p>
+     
+      
+         </div>
+
+         <div class="col-sm-10" id="s" style="display:none;">
+          <h1 style="color:blue; font-weight: bold;">ADGA</h1>
+          <h3 style="color:green;">Advance Diploma in Graphics & Animation</h3>
+          <h5 style="float: left; color: red;">Course Code:-LT 18</h5>
+          <h5 style="float: right; color: red;">Duration - One Year</h5><br>
+
+     
+            <h1 style="font-weight: bold; color:dodgerblue;">Modules:</h1>
+             <P>Concept of Drawing & Cartooning, Colour Management, Animation Rule & Tricks, Story Boarding,
+              Layouting, Modeling, Walk-trough, Camera & Light Adjustment, Rigging, Special Effects.
+             </P>
+           
+                  
+            <h2 style="color:dodgerblue">Fee Structure:</h2>
+            <p style="color:black; font-weight: bold;">In Lumpsum Rs.15550/-<br>in Installment RS. 8000+6000+3000=17000/-</p>
+     
+      
+         </div>
+
+         <div class="col-sm-10" id="z">
+       
+      
+         </div>
+        </div>
+       
+    
+          
+  
+  </div>
+  </div>
+      
+
+
+{% endblock content %}
+{% block jscontent %}
+<script src="{% static 'edu/js/my.js'%}"></script>
+{% endblock jscontent %}
+ 

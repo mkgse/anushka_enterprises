@@ -1,0 +1,44 @@
+{% extends 'edu/base1.html' %}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'edu/css/education.css' %}">
+
+{% endblock css %}
+
+{% block content3 %} 
+
+<div class="container m-auto my-5 p-5 shadow">
+  {% for st in admstatus %}
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">User Name</th>
+        <th scope="col">Registration Amount</th>
+        <th scope="col">Admission Confirm Date</th>
+        <th scope="col">Admission Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{st.user}}</td>
+        <td>{{st.reg_amount}}</td>
+        <td>{{st.admissin_date}}</td>
+        <td>{{st.admission_status}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  {% endfor %}
+</div>
+  
+ 
+
+{% endblock content3 %}
+
+
+{% block jscontent %}
+
+{% endblock jscontent %}

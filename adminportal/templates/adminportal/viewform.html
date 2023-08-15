@@ -1,0 +1,176 @@
+{% extends 'adminportal/base1.html' %}
+
+{% load static %}
+
+
+{% block content3 %}
+<style>
+  
+</style>
+      
+
+
+
+ <div class="container mt-5 print-container my-5">
+  <h2 class="text-center">Student Admission Form</h2>
+  
+    <h4>Persional Details</h4> 
+    <hr> 
+    <table class="table table-bordered mt-1 p-3 text-center">
+       
+        <tbody>
+  
+          <tr>
+            <td>First Name</td>
+            <td>{{fm.firstname}}</td>
+            <td>Middle Name</td>
+            <td>{{fm.middlename}}</td>
+            <td>Last Name</td>
+            <td>{{fm.lastname}}</td>
+        </tr>
+        <tr>
+            <td>Father Name</td>
+            <td>{{fm.fathername}}</td>
+            <td>Mother Name</td>
+            <td>{{fm.mothername}}</td>
+            <td>Date of Birth</td>
+           <td>{{fm.dob}}</td>
+        
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>{{fm.gender}}</td>
+            <td>Mobile</td>
+            <td>{{fm.mobile}}</td>
+            <td>Email Id</td>
+           <td>{{fm.email}}</td>
+        
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td>{{fm.address}}</td>
+            <td>City</td>
+            <td>{{fm.city}}</td>
+            <td>State</td>
+           <td>{{fm.state}}</td>
+          </tr>
+          <tr>
+            <td>Pincode</td>
+           <td>{{fm.pin}}</td>
+          </tr>
+          
+        </tbody>
+        
+      </table>
+
+      <h4>Educational Details</h4> 
+    <hr> 
+    <table class="table table-bordered mt-1 p-3 text-center">
+       
+        <tbody>
+  
+          <tr>
+            <th>S.N.</th>
+            <th>Examination</th>
+            <th>Board</th>
+            <th>Passing Year</th>
+            <th>Percentage</th>
+            <th>Roll No.</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Class X</td>
+            <td>{{fm.board}}</td>
+            <td>{{fm.passing_year}}</td>
+            <td>{{fm.percentage}}</td>
+            <td>{{fm.roll_number}}</td>
+
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Class XII</td>
+            <td>{{fm.board1}}</td>
+            <td>{{fm.passing_year1}}</td>
+            <td>{{fm.percentage1}}</td>
+            <td>{{fm.roll_number1}}</td>
+        
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Graduation</td>
+            <td>{{fm.board2}}</td>
+            <td>{{fm.passing_year2}}</td>
+            <td>{{fm.percentage2}}</td>
+            <td>{{fm.roll_number2}}</td>
+         
+          </tr>
+          
+        </tbody>
+        
+      </table>
+      <h4>Document Details</h4> 
+    <hr> 
+    <table class="table table-bordered mt-1 p-3 text-center">
+       
+        <tbody>
+  
+          <tr>
+            <td>Photo</td>
+  
+            <td class="text-center"><img src="{{fm.photo.url}}" alt=""
+             
+                class="img-fluid img-thumbnail" width="100" height="100"></td>
+             
+            <td>Signature</td>
+            <td><img src="{{fm.signature.url}}" alt=""
+               class="img-fluid img-thumbnail " width="100" height="100"></td>
+            <td>Matriculation</td>
+          
+            <td>{{fm.matriculation}} </td>
+        </tr>
+        <tr>
+            <td>Intermediate</td>
+            <td>{{fm.intermediate}}</td>
+            <td>Graduation</td>
+            <td>{{fm.graducation}}</td>
+            <td>Post Graduation</td>
+           <td>{{fm.postgraducation}}</a></td>
+        
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td>{{fm.address_proof}}</td>
+        
+          </tr>
+          
+        </tbody>
+        
+      </table>
+
+      <h4>Course Details</h4> 
+    <hr> 
+    <table class="table table-bordered mt-1 p-3 text-center">
+       
+        <tbody>
+  
+          <tr>
+            <td>Course Applied For</td>
+            <td>{{fm.course_applied_for}}</td>
+          
+        </tr>
+        
+          
+        </tbody>
+        
+      </table>
+</form>
+<div class="text-center">
+<a href="{% url 'admindashboard'%}" class="btn btn-primary">Back to Home</a>
+</div>
+ </div>
+
+{% endblock content3 %}
+
+{% block jscontent %}
+
+{% endblock jscontent %}
