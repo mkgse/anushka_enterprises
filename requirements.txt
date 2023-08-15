@@ -10,4 +10,5 @@ pytz==2023.3
 sqlparse==0.4.4
 tzdata==2023.3
 gunicorn==20.0.4
+python==3.8.0
 
