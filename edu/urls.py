@@ -1,8 +1,5 @@
 from django.urls import path
 from  edu import views
-from django.conf import settings
-from django.conf.urls.static import static
-
 urlpatterns = [
     path('Home',views.Home,name='home1' ),
     path('about',views.about1,name='about1' ),
@@ -21,5 +18,4 @@ urlpatterns = [
     path('admissionstatus/',views.Admission_status, name='admissionstatus'),
     path('success',views.success_payment, name="success"),
     path('payri/',views.payment_print,name="payri")
-]+ static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
-
+]

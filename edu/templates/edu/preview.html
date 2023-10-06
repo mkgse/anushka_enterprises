@@ -33,11 +33,11 @@
  {% for fm in form %}
 
 
-
- <div class="container mt-5 print-container" >
+<br>
+ <div class="container-fluid mt-5 print-container p-0 m-0">
     <h4>Persional Details</h4> 
     <hr> 
-    <table class="table table-bordered mt-1 p-3 text-center">
+    <table class="table table-bordered mt-2 p-3 text-center">
        
         <tbody>
   
@@ -192,12 +192,14 @@
 </form>
 <center>
 <input id ="printbtn" type="button" value="Print" onclick="window.print();" class="btn-primary">
-
- 
 </center>
+<br>
+<br>
 
 {% endblock content3 %}
+
 
 {% block jscontent %}
 
 {% endblock jscontent %}
+

@@ -1,5 +1,4 @@
-import email
-from email import message
+
 from django.shortcuts import render
 from .forms import StudentRegistration
 from .models import User

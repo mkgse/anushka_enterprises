@@ -52,6 +52,7 @@
 
       {% endblock content3 %}
 
+{% block jsfooter %}
     <!-- Footer -->
 <footer class="text-center text-lg-start bg-primary text-white p-0 m-0">
   <!-- Section: Social media -->
@@ -171,16 +172,14 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+{% endblock jsfooter %}
     {% block jscontent %}
     <script src="{% static 'edu/js/jquery.js'%}"></script>
     <script src="{% static 'edu/js/popper.js'%}"></script>
     <script src="{% static 'edu/js/bootstrap.js'%}"></script>
-    {% endblock jscontent %}
+{% endblock jscontent %}
 
-    {% block jsfooter %}
-    {% endblock jsfooter %}
 
 </body>
-
 
 </html>
